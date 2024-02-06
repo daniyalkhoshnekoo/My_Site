@@ -2,3 +2,4 @@ Django==4.2.9
 asgiref
 sqlparse
 tzdata
+pillow==10.2.0
