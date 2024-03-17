@@ -17,8 +17,9 @@ def contact_view(request):
         else:
             sweetify.error(request, 'submit failed!')
             return HttpResponseRedirect('/')
-
-    return render (request, 'website/contact.html')
+    else:
+        form = ContactForm()
+        return render (request, 'website/contact.html')
 
 def about_view(request):
     return render (request, 'website/about.html')
